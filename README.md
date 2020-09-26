@@ -1,2 +1,2 @@
-# kni
-Python flask application for container/Kubernetes/KNative demos
+# KNi
+Python Flask application for container/Kubernetes/KNative demos
