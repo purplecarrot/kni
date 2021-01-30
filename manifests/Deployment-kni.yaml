@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kni
+  labels:
+    app: kni
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kni
+  template:
+    metadata:
+      name: kni
+      labels:
+        app: kni
+    spec:
+      containers:
+      - name: kni
+        image: quay.io/purplecarrot/kni:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
